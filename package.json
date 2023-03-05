@@ -1,0 +1,31 @@
+{
+  "name": "restaurant-project",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoaSalgado/Restaurant-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoaSalgado/Restaurant-Project/issues"
+  },
+  "homepage": "https://github.com/NoaSalgado/Restaurant-Project#readme",
+  "dependencies": {
+    "prettier": "^2.8.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "style-loader": "^3.3.1"
+  }
+}
