@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Ubuntu:wght@400;700&display=swap');
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #040c0b;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.header {
+  background-color: #040c0b;
+  padding: 4rem 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #daa34d;
+  font-family: 'Hanalei', cursive;
+  font-size: calc(3.2rem + 2vw);
+  letter-spacing: 0.5rem;
+  text-shadow: 2px 2px #dac3a1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__btn {
+  background: none;
+  border: none;
+  color: #dac3a1;
+  cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 2.5rem;
+}
+
+.nav__btn.active {
+  color: #daa34d;
+  border-bottom: 3px solid #daa34d;
+}
+
+.hero {
+  background-image: url(./images/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  margin-bottom: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  text-align: center;
+  width: 50%;
+  padding: 5rem;
+}
+
+.main-heading {
+  color: #dac3a1;
+  cursor: pointer;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #000;
+  margin-bottom: 4rem;
+}
+
+.main-heading span {
+  display: block;
+}
+
+.btn {
+  background-color: #464c37;
+  border: none;
+  border-radius: 1.5rem;
+  color: #dac3a1;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 2rem 4rem;
+}
