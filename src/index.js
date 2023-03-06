@@ -1,4 +1,5 @@
 import { home } from './Home/Home';
+import { menu } from './Menu/Menu';
 import './index.css';
 
 let currentPage = 'home';
@@ -10,9 +11,10 @@ function addHandlers() {
       currentPage = e.target.dataset.target;
       navBtns.forEach((btn) => btn.classList.remove('active'));
       e.target.classList.add('active');
+      console.log(e.target);
+      displayContent();
     })
   );
-  console.log(navBtns);
 }
 
 function displayContent() {
@@ -26,12 +28,20 @@ function displayContent() {
       </nav>
     </header>
     <main class="main">
-        ${home()}
+        ${
+          currentPage === 'home' ? home() : currentPage === 'menu' ? menu() : ''
+        }
       </section>
     </main>
   `;
-  return contentHtml;
+  const contentEl = document.querySelector('#content');
+  contentEl.innerHTML = contentHtml;
+  addHandlers();
 }
-const contentEl = document.querySelector('#content');
-contentEl.innerHTML = displayContent();
-addHandlers();
+
+function init() {
+  displayContent();
+  addHandlers();
+}
+
+init();

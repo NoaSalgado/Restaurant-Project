@@ -1,0 +1,45 @@
+.menu {
+  margin-bottom: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 35rem);
+  justify-content: center;
+  gap: 3rem;
+}
+
+.poke {
+  background-color: #dac3a1;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(70, 76, 55, 1);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.poke__image {
+  border-radius: 1rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.poke__image img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poke__name {
+  color: #464c37;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.poke__ingredients {
+  color: #464c37;
+  font-size: 1.8rem;
+  text-align: center;
+}
