@@ -1,5 +1,6 @@
 import { home } from './Home/Home';
 import { menu } from './Menu/Menu';
+import { contact } from './Contact/Contact';
 import './index.css';
 
 let currentPage = 'home';
@@ -29,7 +30,11 @@ function displayContent() {
     </header>
     <main class="main">
         ${
-          currentPage === 'home' ? home() : currentPage === 'menu' ? menu() : ''
+          currentPage === 'home'
+            ? home()
+            : currentPage === 'menu'
+            ? menu()
+            : contact()
         }
       </section>
     </main>
