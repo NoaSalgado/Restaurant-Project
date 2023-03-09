@@ -10,9 +10,6 @@ function addHandlers() {
   navBtns.forEach((btn) =>
     btn.addEventListener('click', (e) => {
       currentPage = e.target.dataset.target;
-      navBtns.forEach((btn) => btn.classList.remove('active'));
-      e.target.classList.add('active');
-      console.log(e.target);
       displayContent();
     })
   );
@@ -23,9 +20,15 @@ function displayContent() {
   <header class="header">
       <p class="logo">Poke Task</p>
       <nav class="nav">
-        <button class="nav__btn active" data-target="home">Home</button>
-        <button class="nav__btn" data-target="menu">Menu</button>
-        <button class="nav__btn" data-target="contact">Contact</button>
+        <button class="nav__btn ${
+          currentPage === 'home' ? 'active' : ''
+        }" data-target="home">Home</button>
+        <button class="nav__btn ${
+          currentPage === 'menu' ? 'active' : ''
+        }" data-target="menu">Menu</button>
+        <button class="nav__btn ${
+          currentPage === 'contact' ? 'active' : ''
+        }" data-target="contact">Contact</button>
       </nav>
     </header>
     <main class="main">
