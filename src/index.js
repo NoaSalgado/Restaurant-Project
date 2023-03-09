@@ -6,8 +6,8 @@ import './index.css';
 let currentPage = 'home';
 
 function addHandlers() {
-  const navBtns = document.querySelectorAll('.nav__btn');
-  navBtns.forEach((btn) =>
+  const btns = document.querySelectorAll('button');
+  btns.forEach((btn) =>
     btn.addEventListener('click', (e) => {
       currentPage = e.target.dataset.target;
       displayContent();

@@ -7,7 +7,7 @@ export function home() {
           <h1 class="main-heading">
             Hawaiian food, <span>healthy lifestyle</span>
           </h1>
-          <button class="btn">Order Now</button>
+          <button class="btn" data-target="menu">Order Now</button>
         </div>
     `;
   return homeHtml;
